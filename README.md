@@ -53,6 +53,8 @@ use the `*_s2vt.py`. Before that, it needs to change the model path of evaluatio
 python tf_s2vt.py --gpu 0 --task evaluate
 ```
 
+for testing the pretrained models, please refer to [Repo]https://github.com/adwardlee/video_to_text
+
 The MSVD models can be downloaded from [here](https://drive.google.com/open?id=199se09ycy1nMF7tCs9R1J-lIA1sHKcHi)
 The MSR-VTT models can be downloaded from [here](https://drive.google.com/open?id=16relLI2XWjgoM2kPXN55u2IT23CrEyLz)
 
