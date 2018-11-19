@@ -6,7 +6,7 @@ with reinforcement learning
 *****
 
 This repo holds the codes and models for the end-to-end captioning method presented on WACV 2019
-**Temporal Action Detection with Structured Segment Networks**
+**End-to-End Video Captioning with Multitask Reinforcement Learning**
 Lijun Li, Boqing Gong
 
 [[Arxiv Preprint]](http://arxiv.org/abs/1803.07950)
@@ -15,7 +15,7 @@ Lijun Li, Boqing Gong
 
 use the following to clone to your local machine
 ``` bash
-git clone https://github.com/adwardlee/video2text.git
+git clone https://github.com/adwardlee/multitask-end-to-end-video-captioning.git
 ```
 ### Download Datasets
 
@@ -27,14 +27,24 @@ video captioning: MSVD & MSR-VTT.
 
 ## Preprocess data
 ###  Extract all frames from videos
-It needs to extract the frames by using `cpu_extract.py`. Then use `read_certrain_number_frame.py` to uniformly sample 5 frames from all frames of a video. At last use the `tf_feature_extract.py` to extract the inception-resnet-v2 features of frame.
+It needs to extract the frames by using `cpu_extract.py`. Then use `read_certrain_number_frame.py` to uniformly sample 5 frames from all frames of a video. At last use the `tf_feature_extract.py` and modify the model path to extract the inception-resnet-v2 features of frame.
 
 ## Training from scratch
 use the `*_s2vt.py`. Before that, it needs to change the model path of evaluation function and some global parameters in the file. For example,
+### Step 1 ###
 ```
 python tf_s2vt.py --gpu 0 --task train
 ```
-
+### Step 2 ###
+Using the pretrained model from step 1 and then 
+```
+python reinforcement_multisampling_tf_s2vt.py --task train
+```
+### Step 3 ###
+Using the pretrained model from step3 and then
+```
+python reinforce_multitask_e2e_attribute_s2vt.py --task train
+```
 
 ## Testing existing models
 ### Evaluate models
