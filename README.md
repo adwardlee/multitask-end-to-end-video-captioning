@@ -6,10 +6,14 @@ with reinforcement learning
 *****
 
 This repo holds the codes and models for the end-to-end captioning method presented on WACV 2019
+
 **End-to-End Video Captioning with Multitask Reinforcement Learning**
 Lijun Li, Boqing Gong
 
 [[Arxiv Preprint]](http://arxiv.org/abs/1803.07950)
+
+If you use our code, please cite our paper.
+
 ## Prerequisites
 * This code requires [tensorflow1.1.0](https://storage.googleapis.com/tensorflow/linux/gpu/tensorflow_gpu-1.1.0-cp27-none-linux_x86_64.whl). The evaluation code is in Python, and you need to install [coco-caption evaluation](https://github.com/tylin/coco-caption) if you want to evaluate the model.
 
