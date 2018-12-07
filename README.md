@@ -8,6 +8,7 @@ with reinforcement learning
 This repo holds the codes and models for the end-to-end captioning method presented on WACV 2019
 
 **End-to-End Video Captioning with Multitask Reinforcement Learning**
+
 Lijun Li, Boqing Gong
 
 [[Arxiv Preprint]](http://arxiv.org/abs/1803.07950)
