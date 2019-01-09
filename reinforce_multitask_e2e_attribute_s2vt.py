@@ -1143,8 +1143,8 @@ def evaluation(model_path='/home/llj/tensorflow_s2vt/reinforcement_multitask_mod
     #saver.restore(sess, model_path_last)
 
     with open('reinforcement_multitask_models/groundtruth_greedy.txt', 'w') as f:
-      for i in xrange(1500, 87000, 1500):
-        model_path_last = model_path + '10batch_size2reinforce_multitask_model_lambda0_greedy_groundtruth-' + str(i)
+      #for i in xrange(1500, 87000, 1500):
+        model_path_last = model_path + '10batch_size2reinforce_multitask_model_lambda0_greedy_groundtruth-123123'
         saver.restore(sess, model_path_last)
         all_decoded_for_eval = {}
         test_index = list(range(len(test_captions)))
