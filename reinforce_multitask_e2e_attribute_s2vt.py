@@ -35,7 +35,7 @@ def parse_args():
                         help='dataset to extract',
                         default='train_val', type=str)
     parser.add_argument('--task', dest='task',
-                        help='train or test',
+                        help='train , test or evaluation',
                         default='train', type=str)
     parser.add_argument('--tg', dest='tg',
                         help='target to be extract lstm feature',
