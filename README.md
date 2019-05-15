@@ -1,6 +1,3 @@
-# multitask-end-to-end-video-captioning
-with reinforcement learning
-
 ## End-to-End Video Captioning with Multitask Reinforcement Learning
 
 *****
