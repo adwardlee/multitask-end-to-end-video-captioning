@@ -43,7 +43,7 @@ Using the pretrained model from step 1 and then
 python reinforcement_multisampling_tf_s2vt.py --task train
 ```
 ### Step 3 ###
-Using the pretrained model from step3 and then
+Using the pretrained model from step 2 and then
 ```
 python reinforce_multitask_e2e_attribute_s2vt.py --task train
 ```
